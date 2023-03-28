@@ -1,0 +1,5 @@
+.section-portfolio img{
+    width: 100%;
+    height: 635px;
+    object-fit: cover;
+}

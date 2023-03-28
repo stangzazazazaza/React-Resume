@@ -1,0 +1,19 @@
+#contact{
+    position: relative;
+    height: 50vh;
+}
+#contact h1{  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    color: rgba(0, 0, 0, 0.089);
+    position: absolute;
+    z-index: 1;
+    font-size: 27em;
+  }
+.z-index-2{
+    z-index: 2;
+}
+.content a{
+    font-size: 3em;
+}

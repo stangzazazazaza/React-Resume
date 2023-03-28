@@ -1,0 +1,21 @@
+.section-about .bg-white{
+    background-color: white !important;
+    box-shadow:  0.25rem 0.25rem 0.5rem white !important;
+    color: black !important;
+}
+.section-about .bg-white:hover{
+    background-color: white !important;
+    box-shadow:  0.75rem 0.75rem 0.5rem white !important;
+    transition: 0.5s;
+}
+.section-about .bg-black{
+    background-color: black !important;
+    box-shadow:  0.25rem 0.25rem 0.5rem white !important;
+    color: white !important;
+}
+.section-about .bg-black:hover{
+    background-color: black !important;
+    box-shadow:  0.75rem 0.75rem 0.5rem white !important;
+    color: white !important;
+    transition: 0.5s;
+}

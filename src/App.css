@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'myFont';
+  src: url(../src/assets/fonts/Ubuntu-Regular.ttf);
+}
+body{
+  font-family: myFont !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c !important;
+  overflow-x: hidden;
+  color: white !important;
+}
+.bg-main{
+  background-color: #F26800 !important; 
+}
+.text-main{
+  color: #F26800;
+}
+.section-home{
+  height: 100vh;
+}
+.slide-detail{
+  color: white;
+  z-index: 999 !important;
+  font-size: 70px;
+  font-weight: 600;
+}
+.section-home .z-index-1{
+  z-index: 1;
+}
+.section-home .w-133{
+  width: 133%;
+}
+.section-home span{
+ color: #F26800; 
+}
+.section-home .text-decoration{
+  text-decoration: underline;
+  text-decoration-color: #F26800;
+}
+.section-about .power-skill{
+  background-color: #F26800;
+  height: 8px;
+}
+.section-about .underline{
+  width: 70%;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F26800;
+}
+.section-about .add-skill-btn{
+  display: flex;
+  align-items: center;
+  width: 50px;
+  justify-content: center;
+  background-color: #F26800;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #1c1c1c;
+}
+.section-about .add-skill-btn:hover{
+  transition: 0.5s;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.modal .bg-modal{
+  background-color: #1c1c1cab !important;
+}
+.modal .bg-modal-input{
+  background-color: #1c1c1cab !important;
+  color: white !important;
+}
+
+#portfoilo{
+  margin-top: 50px;
+}
+#portfoilo .bg-main-port{
+  background-color: #F26800 !important;
+  width: 150px;
+  height: 350px;
+  top: 150px;
+  left: -90px;
+  z-index: 1;
+}
+#portfoilo .content{
+  top: 280px;
+  z-index: 1;  
+}
+#portfoilo .content h1{
+  font-weight: 800;
+}
+.add-port-btn{
+  text-align: center;
+  font-size: 3em !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+.add-port{
+  font-size: 2em;
+  margin-left: 20px;
+  background-color: #F26800;
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.add-port:hover{
+  transition: .5s;
+  background-color: #1c1c1c;
+}
+
