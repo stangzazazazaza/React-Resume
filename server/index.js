@@ -29,8 +29,6 @@ app.post('/skill/create',(req,res)=>{
     db.query("")
 })
 
-
-app.post()
     // select data education
 app.get('/education',(req,res)=>{
     db.query('SELECT * FROM `education`',(err,result)=>{

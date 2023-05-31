@@ -15,7 +15,7 @@ function education() {
     }).catch((err)=>{
       console.log(err)
     })
-  })
+  },[])
 
   return (                  
     <div className='section-education mt-5' id="education">

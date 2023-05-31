@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import dataPortfolio from '../Data/dataPortfolio'
 import Slilder from './Slilder'
 import axios from 'axios'
 
@@ -13,7 +12,7 @@ function portfolio() {
     .then((res)=>{
       setPortfolio(res.data)
     })
-  })
+  },[])
 
   return (
     <div className="section-portfolio" id='portfoilo'>          

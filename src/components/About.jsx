@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import './About.css'
 import axios from 'axios'
+import skills from '../data/dataSkills'
+
 
 function about() {
 
@@ -14,7 +16,7 @@ useEffect(()=>{
   .then((res)=>{
     setSkills(res.data)    
   })
-})
+},[])
 
   return (
     <div className="section-about" id='about'>
