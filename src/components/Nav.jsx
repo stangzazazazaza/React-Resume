@@ -40,10 +40,7 @@ function Nav() {
               <li className="nav-item">
                 <a className="nav-link" href="#contact">Contact</a>
               </li>
-          </ul>
-          <div className="user-login">
-            <a href="" className='btn-login'>Login</a>
-        </div>
+          </ul>        
         </div>
         
     </div>
