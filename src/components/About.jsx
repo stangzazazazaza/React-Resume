@@ -8,14 +8,11 @@ import skills from '../data/dataSkills'
 
 function about() {
 
-const [skillsList,setSkills] = useState([])
-
-
 useEffect(()=>{
-  axios.get('http://localhost:3307/skill')
-  .then((res)=>{
-    setSkills(res.data)    
-  })
+  // axios.get('http://localhost:3307/skill')
+  // .then((res)=>{
+  //   setSkills(res.data)    
+  // })  
 },[])
 
   return (
@@ -26,18 +23,18 @@ useEffect(()=>{
         <h3>Hi,I'm <b>Napamonton Norkhuntod I'm 23 years old</b></h3>
         <div className="underline"></div>
         <div className="add-skill d-flex ">
-          <h1>My skill</h1>
-          <div className="add-skill-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><FontAwesomeIcon icon={faPlus}/></div>
+          <h1>My skills</h1>
+          {/* <div className="add-skill-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><FontAwesomeIcon icon={faPlus}/></div> */}
         </div>
       </div>
       <div className="row mt-3">
-        <h2 className='text-center'>My skill</h2>
-        {skillsList.map((res,key)=>{
-          return(
-            <div className="col-md-3 mb-3 text-center">
+        <h2 className='text-center'>My skills</h2>
+        {skills.map((res,key)=>{
+          return(            
+            <div className="col-md-3 mb-3 text-center" key={key}>
               <div className={"p-4 rounded " + (res.status == 'Font-End' ? "bg-white":"bg-black")} >
-                <img src={res.iamge} alt="" width={100} height={100}/>
-                <h2 className=' text-center '>{res.name}</h2>
+                <img src={res.pic} alt="" width={100} height={100}/>
+                <h2 className=' text-center '>{res.title}</h2>
               </div>
             </div>  
           )

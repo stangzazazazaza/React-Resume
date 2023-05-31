@@ -2,27 +2,29 @@ import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import Slilder from './Slilder'
+import Port from '../data/dataPort'
 import axios from 'axios'
 
 function portfolio() {
 
-  const [portfolio,setPortfolio] = useState([])
-  useEffect(()=>{
-    axios.get('http://localhost:3307/portfolio')
-    .then((res)=>{
-      setPortfolio(res.data)
-    })
-  },[])
+  // const [portfolio,setPortfolio] = useState([])
+  // useEffect(()=>{
+  //   axios.get('http://localhost:3307/portfolio')
+  //   .then((res)=>{
+  //     setPortfolio(res.data)
+  //   })
+  // },[])
+
+  
 
   return (
     <div className="section-portfolio" id='portfoilo'>          
     <div className="d-flex justify-content-center align-items-center mb-5">
-      <h1 className='text-center'>Portfolio</h1>
-      <div className="add-port" data-bs-toggle="modal" data-bs-target="#exampleModal2"><FontAwesomeIcon icon={faPlus}/></div>
+      <h1 className='text-center'>Portfolio</h1>      
     </div>
       <div className="row">
         <div className="col-md-7">
-          <Slilder data={portfolio}/>
+          <Slilder data={Port}/>
         </div>
         <div className="col-md-5">
           <div className="position-relative">

@@ -2,29 +2,30 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import educations from '../data/dataEdu'
 import './Education.css'
+
 
 function education() {
 
-  const [educationList,setEducation] = useState([])  
+  // const [educationList,setEducation] = useState([])  
 
-  useEffect(()=>{
-    axios.get('http://localhost:3307/education')
-    .then((res)=>{
-      setEducation(res.data)
-    }).catch((err)=>{
-      console.log(err)
-    })
-  },[])
+  // useEffect(()=>{
+  //   axios.get('http://localhost:3307/education')
+  //   .then((res)=>{
+  //     setEducation(res.data)
+  //   }).catch((err)=>{
+  //     console.log(err)
+  //   })
+  // },[])
 
   return (                  
     <div className='section-education mt-5' id="education">
     <div className="d-flex justify-content-center align-items-center mb-5">
-        <h1 className='text-center'>Education</h1>
-        <div className="add-port" data-bs-toggle="modal" data-bs-target="#exampleModal3"><FontAwesomeIcon icon={faPlus}/></div>
+        <h1 className='text-center'>Education</h1>        
     </div>
       <div className="container">
-        {educationList.map((res ,key)=>{
+        {educations.map((res ,key)=>{
           return (
             <div className="row align-items-center border-education">
               <div className="col-md-6 text-center">
@@ -35,7 +36,7 @@ function education() {
                 <h3>Grade {res.grade}</h3>
               </div>
               <div className="col-md-6 text-center">
-                <img src={res.image} alt="" width={200}/>
+                <img src={res.img} alt="" width={200}/>
               </div>
             </div>   
           )

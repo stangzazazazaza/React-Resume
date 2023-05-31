@@ -19,7 +19,7 @@ function Contact() {
             <div className="content">
               <p><FontAwesomeIcon icon={faEnvelope}/> napamonton.norkhuntod@gmail.com</p>
               <p><FontAwesomeIcon icon={faPhone} /> 098-249-8727</p>
-              <p><FontAwesomeIcon icon={faLine} /> 098-249-8727</p>
+              <p><FontAwesomeIcon icon={faLine} /> _stang.</p>
             </div>
           </div>
           <div className="col-md-4">

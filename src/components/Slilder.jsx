@@ -19,8 +19,8 @@ function Slilder({data}) {
         className="mySwiper"
       >
         {data.map((dataPortfolio)=>(
-            <SwiperSlide key={dataPortfolio.e}>
-                <img src={dataPortfolio.image} alt="" />
+            <SwiperSlide key={dataPortfolio.title}>
+                <img src={dataPortfolio.pic} alt="" />
             </SwiperSlide>
         ))}
       </Swiper>
